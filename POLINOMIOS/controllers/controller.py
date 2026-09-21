@@ -1,6 +1,7 @@
 class Controller:
 
     def __init__(self, view, model):
+        "Controlador que conecta la vista y el modelo."
         self.view = view
         self.model = model
 
@@ -9,6 +10,7 @@ class Controller:
         )
 
     def agregar_termino(self):
+        "Agrega un término al polinomio y actualiza la vista."
         coeficiente = self.view.obtener_coeficiente()
         exponente = self.view.obtener_exponente()
 

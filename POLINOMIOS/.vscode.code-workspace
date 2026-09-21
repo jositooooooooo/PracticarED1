@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../.vscode"
+		},
+		{
+			"path": "../controllers"
+		},
+		{
+			"path": "../models"
+		},
+		{
+			"path": "../views"
+		}
+	]
+}

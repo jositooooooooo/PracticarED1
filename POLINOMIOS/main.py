@@ -6,6 +6,7 @@ from controllers.controller import Controller
 
 
 def main():
+    "Función principal que inicializa el modelo, la vista y el controlador."
     root = tk.Tk()
     root.title("Polinomio - MVC")
 

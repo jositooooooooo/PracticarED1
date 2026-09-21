@@ -4,10 +4,9 @@ import tkinter as tk
 class View:
 
     def __init__(self, master):
+        "Vista que maneja la interfaz gráfica del usuario."
         self.master = master
-
         self.master.title("Generador de Polinomio")
-
         self.label_coeficiente = tk.Label(
             master,
             text="Coeficiente:"
@@ -26,6 +25,15 @@ class View:
         self.entry_exponente = tk.Entry(master)
         self.entry_exponente.pack()
 
+        self.label_variable = tk.Label(
+                    master,
+                    text="Variable:"
+                )
+        self.label_variable.pack()
+        
+        self.entry_variable = tk.Entry(master)
+        self.entry_variable.pack()
+
         self.boton_agregar = tk.Button(
             master,
             text="Agregar término"
@@ -34,7 +42,7 @@ class View:
 
         self.label_polinomio = tk.Label(
             master,
-            text="Polinomio: 0"
+            text="Polinomio: "
         )
         self.label_polinomio.pack()
 
